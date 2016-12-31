@@ -1,2 +1,2 @@
-# It's my vimrc file
+# It's my vimrc file.
 
