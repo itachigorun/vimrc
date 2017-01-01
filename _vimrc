@@ -23,7 +23,7 @@ set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\
 set laststatus=2    " 启动显示状态行(1),总是显示状态行(2)  
 
 "=========================="
-"8.不要交换文件和备份文件，减少冲突"
+"2.不要交换文件和备份文件，减少冲突"
 "=========================="
 set noswapfile
 set nobackup
@@ -42,8 +42,8 @@ set nowrap " 取消换行。
 
 
 "==================="
- "13. 对gvim 的设置"
- "=================="
+"3. 对gvim 的设置"
+"=================="
  if has("gui_running")
      colorscheme  solarized
      "colorscheme  darkblue
