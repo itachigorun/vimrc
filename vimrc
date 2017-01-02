@@ -11,9 +11,9 @@
 "1.基本设置
 "=================================
 set number           "显示行号
-set autoread         "文件在Vim之外修改过，自动重新读入"
-set autochdir        "当前目录随着被编辑文件的改变而改变"
-set nocompatible     "使用vim而非vi"
+set autoread         "文件在Vim之外修改过，自动重新读入
+set autochdir        "当前目录随着被编辑文件的改变而改变
+set nocompatible     "使用vim而非vi
 set backspace=2      "可随时用退格键删除
 set shortmess=atI    " 启动的时候不显示那个援助乌干达儿童的提示
 set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
