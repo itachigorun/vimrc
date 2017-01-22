@@ -29,8 +29,11 @@ set nobackup
 set nowb
 set nowritebackup
 set noundofile
-set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
+set encoding=utf-8     "vim中内部编码方式
+set fileencoding=utf-8  "vim保存文件编码
+set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1  "按顺序转码
+set termencoding=utf-8     "vim用于屏幕显示的编码，vim会把内部编码转换为屏幕编码，在用于输出
 
 "=================================
 "3.对gvim 的设置
@@ -59,6 +62,7 @@ set matchtime=2             " 短暂跳转到匹配括号的时间
 set smartindent             " 开启新行时使用智能自动缩进
 set history=1000            " 历史记录数
 set showcmd                 "在状态栏显示“正在输入的命令
+
 
 "markdown配置
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
