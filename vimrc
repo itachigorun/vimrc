@@ -30,10 +30,15 @@ set nowb
 set nowritebackup
 set noundofile
 
-set encoding=utf-8     "vim中内部编码方式
-set fileencoding=utf-8  "vim保存文件编码
-set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1  "按顺序转码
-set termencoding=utf-8     "vim用于屏幕显示的编码，vim会把内部编码转换为屏幕编码，在用于输出
+set encoding=utf-8     "vim缓冲区以及界面的字符编码
+set fileencoding=utf-8  "vim磁盘文件的字符编码
+set fileencodings=utf-8,gb2312,gbk,gb18030,ucs-bom,cp936,latin1  "按顺序转码
+set termencoding=utf-8     "vim用于终端显示的编码，vim会把内部编码转换为屏幕编码，在用于输出
+
+" 读：fileencoding--->encoding 
+" 显：encoding--->termencoding 
+" 写：encoding--->fileencoding
+
 
 "=================================
 "3.对gvim 的设置
