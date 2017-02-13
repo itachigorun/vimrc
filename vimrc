@@ -1,7 +1,7 @@
 "=========================================================================
 " DesCRiption: 适合自己使用的vimrc文件，for Linux/Windows, GUI/Console
 "
-" Last Change: 2016年01月03日 00时00分 
+" Last Change: 2017年01月03日 00时00分 
 "
 " Version: 1.80
 "
@@ -30,8 +30,8 @@ set nowb
 set nowritebackup
 set noundofile
 
-set encoding=utf-8     "vim缓冲区以及界面的字符编码
-set fileencoding=utf-8  "vim磁盘文件的字符编码
+set encoding=utf-8         "vim缓冲区以及界面的字符编码
+set fileencoding=utf-8     "vim磁盘文件的字符编码
 set fileencodings=utf-8,gb2312,gbk,gb18030,ucs-bom,cp936,latin1  "按顺序转码
 set termencoding=utf-8     "vim用于终端显示的编码，vim会把内部编码转换为屏幕编码，在用于输出
 
