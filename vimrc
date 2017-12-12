@@ -1,28 +1,28 @@
 "=========================================================================
-" DesCRiption: ÊÊºÏ×Ô¼ºÊ¹ÓÃµÄvimrcÎÄ¼ş£¬for Linux/Windows, GUI/Console
+" DesCRiption: é€‚åˆè‡ªå·±ä½¿ç”¨çš„vimrcæ–‡ä»¶ï¼Œfor Linux/Windows, GUI/Console
 "
-" Last Change: 2017Äê01ÔÂ03ÈÕ 00Ê±00·Ö 
+" Last Change: 2017å¹´01æœˆ03æ—¥ 00æ—¶00åˆ† 
 "
 " Version: 1.80
 "
 "=========================================================================
 
 "=================================
-"1.»ù±¾ÉèÖÃ
+"1.åŸºæœ¬è®¾ç½®
 "=================================
-set number           "ÏÔÊ¾ĞĞºÅ
-set autoread         "ÎÄ¼şÔÚVimÖ®ÍâĞŞ¸Ä¹ı£¬×Ô¶¯ÖØĞÂ¶ÁÈë
-set autochdir        "µ±Ç°Ä¿Â¼Ëæ×Å±»±à¼­ÎÄ¼şµÄ¸Ä±ä¶ø¸Ä±ä
-set nocompatible     "Ê¹ÓÃvim¶ø·Çvi
-set backspace=2      "¿ÉËæÊ±ÓÃÍË¸ñ¼üÉ¾³ı
-set shortmess=atI    " Æô¶¯µÄÊ±ºò²»ÏÔÊ¾ÄÇ¸öÔ®ÖúÎÚ¸É´ï¶ùÍ¯µÄÌáÊ¾
+set number           "æ˜¾ç¤ºè¡Œå·
+set autoread         "æ–‡ä»¶åœ¨Vimä¹‹å¤–ä¿®æ”¹è¿‡ï¼Œè‡ªåŠ¨é‡æ–°è¯»å…¥
+set autochdir        "å½“å‰ç›®å½•éšç€è¢«ç¼–è¾‘æ–‡ä»¶çš„æ”¹å˜è€Œæ”¹å˜
+set nocompatible     "ä½¿ç”¨vimè€Œévi
+set backspace=2      "å¯éšæ—¶ç”¨é€€æ ¼é”®åˆ é™¤
+set shortmess=atI    " å¯åŠ¨çš„æ—¶å€™ä¸æ˜¾ç¤ºé‚£ä¸ªæ´åŠ©ä¹Œå¹²è¾¾å„¿ç«¥çš„æç¤º
 set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
 "set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\ 
-" ÉèÖÃÔÚ×´Ì¬ĞĞÏÔÊ¾µÄĞÅÏ¢
-set laststatus=2      "1³¬¹ıÁ½¸ö´°¿ÚÊ±ÏÔÊ¾×´Ì¬ĞĞ 2×ÜÊÇÏÔÊ¾×´Ì¬ĞĞ 
+" è®¾ç½®åœ¨çŠ¶æ€è¡Œæ˜¾ç¤ºçš„ä¿¡æ¯
+set laststatus=2      "1è¶…è¿‡ä¸¤ä¸ªçª—å£æ—¶æ˜¾ç¤ºçŠ¶æ€è¡Œ 2æ€»æ˜¯æ˜¾ç¤ºçŠ¶æ€è¡Œ 
 
 "=================================
-"2.²»Òª½»»»ÎÄ¼şºÍ±¸·İÎÄ¼ş£¬¼õÉÙ³åÍ»
+"2.ä¸è¦äº¤æ¢æ–‡ä»¶å’Œå¤‡ä»½æ–‡ä»¶ï¼Œå‡å°‘å†²çª
 "==================================
 set noswapfile
 set nobackup
@@ -30,18 +30,18 @@ set nowb
 set nowritebackup
 set noundofile
 
-set encoding=utf-8         "vim»º³åÇøÒÔ¼°½çÃæµÄ×Ö·û±àÂë
-set fileencoding=utf-8     "vim´ÅÅÌÎÄ¼şµÄ×Ö·û±àÂë
-set fileencodings=utf-8,gb2312,gbk,gb18030,ucs-bom,cp936,latin1  "°´Ë³Ğò×ªÂë
-set termencoding=utf-8     "vimÓÃÓÚÖÕ¶ËÏÔÊ¾µÄ±àÂë£¬vim»á°ÑÄÚ²¿±àÂë×ª»»ÎªÆÁÄ»±àÂë£¬ÔÚÓÃÓÚÊä³ö
+set encoding=utf-8         "vimç¼“å†²åŒºä»¥åŠç•Œé¢çš„å­—ç¬¦ç¼–ç 
+set fileencoding=utf-8     "vimç£ç›˜æ–‡ä»¶çš„å­—ç¬¦ç¼–ç 
+set fileencodings=utf-8,gb2312,gbk,gb18030,ucs-bom,cp936,latin1  "æŒ‰é¡ºåºè½¬ç 
+set termencoding=utf-8     "vimç”¨äºç»ˆç«¯æ˜¾ç¤ºçš„ç¼–ç ï¼Œvimä¼šæŠŠå†…éƒ¨ç¼–ç è½¬æ¢ä¸ºå±å¹•ç¼–ç ï¼Œåœ¨ç”¨äºè¾“å‡º
 
-" ¶Á£ºfileencoding--->encoding 
-" ÏÔ£ºencoding--->termencoding 
-" Ğ´£ºencoding--->fileencoding
+" è¯»ï¼šfileencoding--->encoding 
+" æ˜¾ï¼šencoding--->termencoding 
+" å†™ï¼šencoding--->fileencoding
 
 
 "=================================
-"3.¶Ôgvim µÄÉèÖÃ
+"3.å¯¹gvim çš„è®¾ç½®
 "=================================
  if has("gui_running")
      colorscheme  solarized
@@ -50,26 +50,26 @@ set termencoding=utf-8     "vimÓÃÓÚÖÕ¶ËÏÔÊ¾µÄ±àÂë£¬vim»á°ÑÄÚ²¿±àÂë×ª»»ÎªÆÁÄ»±àÂë
      "colorscheme desert
  endif
 
-set go=                    "È¥µô±ß¿ò
-set paste                  "Õ³ÌùÊ±±£³Ö¸ñÊ½
-set nowrap                 "È¡Ïû»»ĞĞ
+set go=                    "å»æ‰è¾¹æ¡†
+set paste                  "ç²˜è´´æ—¶ä¿æŒæ ¼å¼
+set nowrap                 "å–æ¶ˆæ¢è¡Œ
 
 
-filetype plugin on          "ÔÊĞí²å¼ş
-filetype plugin indent on   "Æô¶¯×Ô¶¯²¹È«
-filetype on                 "¼ì²âÎÄ¼şÀàĞÍ
-filetype indent on          " Õë¶Ô²»Í¬µÄÎÄ¼şÀàĞÍ²ÉÓÃ²»Í¬µÄËõ½ø¸ñÊ½
+filetype plugin on          "å…è®¸æ’ä»¶
+filetype plugin indent on   "å¯åŠ¨è‡ªåŠ¨è¡¥å…¨
+filetype on                 "æ£€æµ‹æ–‡ä»¶ç±»å‹
+filetype indent on          " é’ˆå¯¹ä¸åŒçš„æ–‡ä»¶ç±»å‹é‡‡ç”¨ä¸åŒçš„ç¼©è¿›æ ¼å¼
 
-set autoindent              " ×Ô¶¯Ëõ½ø
+set autoindent              " è‡ªåŠ¨ç¼©è¿›
 set cindent
-set showmatch               " ²åÈëÀ¨ºÅÊ±£¬¶ÌÔİµØÌø×ªµ½Æ¥ÅäµÄ¶ÔÓ¦À¨ºÅ
-set matchtime=2             " ¶ÌÔİÌø×ªµ½Æ¥ÅäÀ¨ºÅµÄÊ±¼ä
-set smartindent             " ¿ªÆôĞÂĞĞÊ±Ê¹ÓÃÖÇÄÜ×Ô¶¯Ëõ½ø
-set history=1000            " ÀúÊ·¼ÇÂ¼Êı
-set showcmd                 "ÔÚ×´Ì¬À¸ÏÔÊ¾¡°ÕıÔÚÊäÈëµÄÃüÁî
+set showmatch               " æ’å…¥æ‹¬å·æ—¶ï¼ŒçŸ­æš‚åœ°è·³è½¬åˆ°åŒ¹é…çš„å¯¹åº”æ‹¬å·
+set matchtime=2             " çŸ­æš‚è·³è½¬åˆ°åŒ¹é…æ‹¬å·çš„æ—¶é—´
+set smartindent             " å¼€å¯æ–°è¡Œæ—¶ä½¿ç”¨æ™ºèƒ½è‡ªåŠ¨ç¼©è¿›
+set history=1000            " å†å²è®°å½•æ•°
+set showcmd                 "åœ¨çŠ¶æ€æ æ˜¾ç¤ºâ€œæ­£åœ¨è¾“å…¥çš„å‘½ä»¤
 
 
-"markdownÅäÖÃ
+"markdowné…ç½®
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
 au BufRead,BufNewFile *.{go}   set filetype=go
 au BufRead,BufNewFile *.{js}   set filetype=javascript
@@ -80,21 +80,21 @@ nmap \ \cc
 vmap \ \cc
 
 
-syntax on                  " ×Ô¶¯Óï·¨¸ßÁÁ
-set ruler                  " ´ò¿ª×´Ì¬À¸±ê³ß
-set autochdir              " ×Ô¶¯ÇĞ»»µ±Ç°Ä¿Â¼Îªµ±Ç°ÎÄ¼şËùÔÚµÄÄ¿Â¼
-set ignorecase smartcase   " ËÑË÷Ê±ºöÂÔ´óĞ¡Ğ´£¬µ«ÔÚÓĞÒ»¸ö»òÒÔÉÏ´óĞ´×ÖÄ¸Ê±ÈÔ±£³Ö¶Ô´óĞ¡Ğ´Ãô¸Ğ
-set incsearch              " ÊäÈëËÑË÷ÄÚÈİÊ±¾ÍÏÔÊ¾ËÑË÷½á¹û
-set hlsearch               " ËÑË÷Ê±¸ßÁÁÏÔÊ¾±»ÕÒµ½µÄÎÄ±¾
+syntax on                  " è‡ªåŠ¨è¯­æ³•é«˜äº®
+set ruler                  " æ‰“å¼€çŠ¶æ€æ æ ‡å°º
+set autochdir              " è‡ªåŠ¨åˆ‡æ¢å½“å‰ç›®å½•ä¸ºå½“å‰æ–‡ä»¶æ‰€åœ¨çš„ç›®å½•
+set ignorecase smartcase   " æœç´¢æ—¶å¿½ç•¥å¤§å°å†™ï¼Œä½†åœ¨æœ‰ä¸€ä¸ªæˆ–ä»¥ä¸Šå¤§å†™å­—æ¯æ—¶ä»ä¿æŒå¯¹å¤§å°å†™æ•æ„Ÿ
+set incsearch              " è¾“å…¥æœç´¢å†…å®¹æ—¶å°±æ˜¾ç¤ºæœç´¢ç»“æœ
+set hlsearch               " æœç´¢æ—¶é«˜äº®æ˜¾ç¤ºè¢«æ‰¾åˆ°çš„æ–‡æœ¬
 
 "=================================
 "others
 "=================================
-autocmd! bufwritepost _vimrc source % " vimrcÎÄ¼şĞŞ¸ÄÖ®ºó×Ô¶¯¼ÓÔØ windows
-autocmd! bufwritepost .vimrc source % " vimrcÎÄ¼şĞŞ¸ÄÖ®ºó×Ô¶¯¼ÓÔØ linux
+autocmd! bufwritepost _vimrc source % " vimrcæ–‡ä»¶ä¿®æ”¹ä¹‹åè‡ªåŠ¨åŠ è½½ windows
+autocmd! bufwritepost .vimrc source % " vimrcæ–‡ä»¶ä¿®æ”¹ä¹‹åè‡ªåŠ¨åŠ è½½ linux
 
 "=================================
-"×Ô¶¯²¹È«
+"è‡ªåŠ¨è¡¥å…¨
 "=================================
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
