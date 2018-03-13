@@ -34,7 +34,6 @@ set encoding=utf-8         "vim缓冲区以及界面的字符编码
 set fileencoding=utf-8     "vim磁盘文件的字符编码
 set fileencodings=utf-8,gb2312,gbk,gb18030,ucs-bom,cp936,latin1  "按顺序转码
 set termencoding=utf-8     "vim用于终端显示的编码，vim会把内部编码转换为屏幕编码，在用于输出
-language message utf-8     "解决consle输出乱码
 
 " 读：fileencoding--->encoding 
 " 显：encoding--->termencoding 
@@ -228,3 +227,35 @@ autocmd BufNewFile * normal G
 
 " 去掉输入错误的提示声音
 set noeb
+
+" ============================ specific file type ===========================
+
+autocmd FileType python set tabstop=4 shiftwidth=4 expandtab ai
+autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
+autocmd BufRead,BufNew *.md,*.mkd,*.markdown  set filetype=markdown.mkd
+
+autocmd BufNewFile *.sh,*.py exec ":call AutoSetFileHead()"
+function! AutoSetFileHead()
+    " .sh
+    if &filetype == 'sh'
+        call setline(1, "\#!/bin/bash")
+    endif
+
+    " python
+    if &filetype == 'python'
+        call setline(1, "\#!/usr/bin/env python")
+        call append(1, "\# encoding: utf-8")
+    endif
+
+    normal G
+    normal o
+    normal o
+endfunc
+
+autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
