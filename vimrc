@@ -48,6 +48,8 @@ set termencoding=utf-8     "vim用于终端显示的编码，vim会把内部编�
      "colorscheme  darkblue
      "colorscheme Tomorrow Tomorrow-Night
      "colorscheme desert
+ else
+     colorscheme desert
  endif
 
 set go=                    "去掉边框
